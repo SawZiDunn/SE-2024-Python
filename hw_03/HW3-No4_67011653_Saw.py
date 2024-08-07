@@ -5,16 +5,18 @@ def main():
     turtle.width(7)
     colours = ["blue", "black", "red", "yellow", "green"]
 
-    # blue ring center
+    # center for blue ring
     # values are adjustable
-    x, y = -220, 100
+    x, y = -200, 0
+    temp = (2 * r) + (r / 2)
 
     for (index, colour) in enumerate(colours):
         # for the yellow(4th) ring
         if index == 3:
-            y -= 110 # move the position down by 110
-            x -= (220 * 3) # get the original x value
-            x = x / 2 if x < 0 else x * 2
+            y -= r # move the position down by the radius value
+            x -= temp * 3 # get the original x value
+            x += temp / 2
+            
 
         turtle.color(colour)
         turtle.penup()
@@ -22,7 +24,7 @@ def main():
         turtle.pendown()
         turtle.circle(r)
 
-        x += 220 #move the ring to the right by 220
+        x += temp #move the ring to the right for every loop
     turtle.done()
     
 

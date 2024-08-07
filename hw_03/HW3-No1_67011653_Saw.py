@@ -2,8 +2,8 @@ def main():
     name = input("Enter employee's name: ")
     hours = float(input("Enter number of hours worked in a week: "))
     hourly_pay_rate = float(input("Enter hourly pay rate: "))
-    federal_tax = float(input("Federal tax withholding rate: "))
-    state_tax = float(input("Enter state tax withholding rate: "))
+    federal_tax = float(input("Federal tax withholding rate(e.g., 20% = 0.2): "))
+    state_tax = float(input("Enter state tax withholding rate(e.g., 9% = 0.09): "))
 
     gross_pay = hourly_pay_rate * hours
     federal_deduction = gross_pay * federal_tax

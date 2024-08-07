@@ -17,6 +17,7 @@ def main():
     turtle.goto(x2, y2)
     turtle.goto(x3, y3)
     turtle.goto(x1, y1)
+    # formula to find triangle area from vertices
     area = (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
     turtle.penup()
 
@@ -24,7 +25,7 @@ def main():
     y_value = min(y1, y2, y3) - 20
     turtle.goto(x_value, y_value)
     turtle.pendown()
-    turtle.write(f"Area = {area:.2f}")
+    turtle.write(f"Area = {round(area, 2)} square units")
 
     turtle.done()
 
