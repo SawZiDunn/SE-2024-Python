@@ -1,24 +1,29 @@
 import turtle
 
 def draw_square(size, n):
+    turtle.speed(0)
     turtle.penup()
-    x, y = 0, 0
+    x, y = 0, 0 # define where the first row starts
     turtle.goto(x, y)
     turtle.pendown()
 
-    length = size / n # the side of each small square
+    length = size / n # the length of each small square
     for i in range(n):
         for j in range(n):
-            for _ in range(n - 1):
+            for k in range(4):
                 turtle.forward(length)
                 turtle.right(90)
             turtle.forward(length)
-        
-        
-        turtle.backward(length * n)
-        turtle.right(90)
-        turtle.forward(length)
-        turtle.left(90)
+
+        # turtle.backward(size)
+        # turtle.right(90)
+        # turtle.forward(length)
+        # turtle.left(90)
+
+        turtle.penup()
+        turtle.goto(x, y - length * (i + 1))
+        turtle.pendown()
+
         
     turtle.done()
 
