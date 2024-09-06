@@ -3,7 +3,7 @@ x = eval(input("Enter somthing: "))
 if type(x) == float:
     choice = int(input("floating point(1) or scientiic format(2)?: "))
     if choice == 1:
-        print(f"{x:.2f}")
+        print("%.2f"%x)
     elif choice == 2:
         print(f"{x:.2e}")
     else:

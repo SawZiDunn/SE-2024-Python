@@ -9,7 +9,7 @@ def main():
     # center for blue ring
     # values are adjustable
     x, y = -200, 0
-    temp = (2 * r) + (r / 2)
+    temp = (2 * r) + (r / 2) # distance between each center of the circle
 
     for (index, colour) in enumerate(colours):
         # for the yellow(4th) ring
@@ -27,8 +27,8 @@ def main():
 
         x += temp #move the ring to the right for every loop
     turtle.done()
-    
 
 if __name__ == "__main__":
-    main()
+    # main()
+    print("%.2e"%0.00087)
 

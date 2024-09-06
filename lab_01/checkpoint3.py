@@ -3,7 +3,7 @@ def swap(a, b):
     return a, b
 
 def isEqual(a, b):
-    return True if a == b else False
+    return a == b
 
 x = print("Hello")
 
