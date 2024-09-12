@@ -1,23 +1,23 @@
 class BankAccount:
     def __init__(self, bank_name, owner, acc_num, balance) -> None:
-        self.bank_name = bank_name
-        self.owner = owner
-        self._acc_num = acc_num
-        self._balance = balance
+        self.__bank_name = bank_name
+        self.__owner = owner
+        self.__acc_num = acc_num
+        self.__balance = balance
     
     def get_balance(self):
-        print(f"Your current balance is {self._balance} Dollars.")
+        print(f"Your current balance is {self.__balance} Dollars.")
 
     def deposit(self, amount):
-        self._balance += amount
+        self.__balance += amount
         print(f"You deposited {amount} Dollars.")
         self.get_balance()
 
     def withdraw(self, amount):
-        if amount > self._balance:
+        if amount > self.__balance:
             print("Not enough balance!")
             return
-        self._balance -= amount
+        self.__balance -= amount
         print(f"You withdrew {amount} Dollars.")
         self.get_balance()
 

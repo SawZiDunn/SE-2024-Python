@@ -26,8 +26,8 @@ class Circle:
         turtle.circle(self.radius)
 
 circle1 = Circle(100, 100, 100)
-print(f"Circle 1 Area: {circle1.getArea()}")
-print(f"Circle 1 Parameter: {circle1.getPerimeter()}")
+print(f"Circle 1 Area: {circle1.getArea():.2f}")
+print(f"Circle 1 Parameter: {circle1.getPerimeter():.2f}")
 circle1.draw()
 
 circle1.move(0, 0)
