@@ -6,7 +6,7 @@ class LinearEquation:
         self.__d = d
         self.__e = e
         self.__f = f
-        
+
     def get_a(self):
         return self.__a
     
@@ -28,7 +28,7 @@ class LinearEquation:
     def isSolvable(self):
         return self.__a * self.__d - self.__b * self.__c != 0
          
-    
+
     def getX(self):
         numerator = self.__e * self.__d - self.__b * self.__f
         denominator = self.__a * self.__d - self.__b * self.__c
