@@ -51,7 +51,8 @@ def rand():
         print(f"{i + 1} occurred {dice_result[i]} time.")
 
 
-# pile(100)
+pile(100)
+rand()
+
+# num_print()
 # rand()
-x = '\t'
-print(type(x), x)

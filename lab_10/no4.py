@@ -1,6 +1,6 @@
 import turtle
 
-def draw_bar(height, char):
+def draw_bar(height, text):
     width = 20
     turtle.fillcolor("purple")
     
@@ -17,7 +17,7 @@ def draw_bar(height, char):
     x, y = turtle.position()
     turtle.penup()
     turtle.goto(x + 5, y - 15)
-    turtle.write(char)
+    turtle.write(text)
     turtle.goto(x, y)
     turtle.pendown()
     turtle.forward(width)
