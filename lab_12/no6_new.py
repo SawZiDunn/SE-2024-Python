@@ -11,7 +11,6 @@ class Transportation(ABC):
     def find_cost(self):
         pass
 
-
 class Walk(Transportation):
     def __init__(self, start_place, end_place, distance) -> None:
         super().__init__(start_place, end_place, distance)

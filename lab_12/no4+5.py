@@ -2,13 +2,13 @@ from abc import ABC, abstractmethod
 import turtle
 
 class TwoDShape(ABC):
+
     @abstractmethod
     def draw(self):
         pass
 
 class Line(TwoDShape):
     def __init__(self, length) -> None:
-        super().__init__()
         self.length = length
 
     def draw(self, ):
@@ -18,7 +18,6 @@ class Line(TwoDShape):
 class Rectangle(TwoDShape):
 
     def __init__(self, w, l) -> None:
-        super().__init__()
         self.width = w
         self.length = l
 
@@ -32,7 +31,6 @@ class Rectangle(TwoDShape):
 
 class Circle(TwoDShape):
     def __init__(self, radius) -> None:
-        super().__init__()
         self.radius = radius
     
     def draw(self):
@@ -43,7 +41,6 @@ class Circle(TwoDShape):
 class Square(TwoDShape):
 
     def __init__(self, l) -> None:
-        super().__init__()
         self.length = l
 
     def draw(self):

@@ -5,6 +5,8 @@ def is_subset(sub: set, sup: set):
             return False
     return True
 
+    # return all(i in sup for i in sub)
+
 sup: set = {1, 2, 3, 4}
 sub: set = {1, 2, 4}
 
