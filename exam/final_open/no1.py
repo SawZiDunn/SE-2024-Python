@@ -1,5 +1,7 @@
 def find_member_positions(number, list_of_numbers):
+
     return_list = list()
+    
     for i in range(len(list_of_numbers)):
         if number == list_of_numbers[i]:
             return_list.append(i)

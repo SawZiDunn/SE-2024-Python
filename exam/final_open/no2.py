@@ -5,6 +5,7 @@ def popularity_scores(dic: dict):
     # convert dict to a list using list comprehension
     new_list = [(key, value) for (key, value) in dic.items()] # [("Python", 100), ("C++", 99.7), ...]
     # sort the list in reverse order according to the score
+    
     new_list = sorted(new_list, key=lambda each: each[1], reverse=True)
 
     previous_score = None

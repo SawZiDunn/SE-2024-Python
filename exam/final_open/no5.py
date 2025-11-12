@@ -11,8 +11,14 @@ class Sale_item(ABC):
 
 
 class Food(Sale_item, ABC):
-    def __init__(self, name, unit_price) -> None:
-        super().__init__(name, unit_price)
+    
+    # we add constructor inside child class only when we want to add additional behaviour or modify
+    # the behaviour of the construct
+    # if not, we can omit this, and python will automatically use the constructor of the parent class
+    # this constructor is not necessary, though no problem if created
+
+    # def __init__(self, name, unit_price) -> None:
+    #     super().__init__(name, unit_price)
 
     @abstractmethod
     def calculate_total(self):
